@@ -38,7 +38,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true) // anotasi untuk menampilkan preview tanpa running program
 @Composable
 fun GreetingPreview() {
     BasicComposableTheme {
