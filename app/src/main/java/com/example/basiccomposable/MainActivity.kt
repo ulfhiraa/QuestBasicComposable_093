@@ -45,7 +45,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 25.sp,
+                fontSize = 24.sp,
                 fontWeight =,
                 color =,
             )
