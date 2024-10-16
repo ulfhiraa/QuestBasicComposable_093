@@ -53,33 +53,39 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 12.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
-                fontWeight = FontWeight.Bold, // untuk Menentukan ketebalan font
+                fontSize = 15.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontWeight = FontWeight.W500, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
-                letterSpacing = 2.sp, // Jarak antar huruf
+                letterSpacing = 0.5.sp, // Jarak antar huruf
                 lineHeight = 55.sp // Jarak antar baris
             ),
             modifier = Modifier
-                .padding(80.dp) // Menambahkan padding 80 dp di semua sisi
+                .padding(20.dp) // Menambahkan padding 80 dp di semua sisi
         )
+
 
         Text(
             text = "Kelas B", // parameter Text untuk menampilkan Teks "Kelas B"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 20.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontSize = 15.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
                 letterSpacing = 1.5.sp, // jarak antar huruf
                 lineHeight = 60.sp, // jarak antar baris
-            )
+            ),
+            modifier = Modifier
+                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
         )
+
 
         Image(
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .size(180.dp)  // Mengatur ukuran gambar menjadi 160x160 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
+                .size(250.dp)  // Mengatur ukuran gambar menjadi 250x250 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
+
 
         Text( // memiliki 2 parameter; text dan style
             text = "Nama",
@@ -87,7 +93,9 @@ fun BasicCompose(modifier: Modifier = Modifier){
                     fontSize = 16.sp, // mengatur ukuran font
                     fontWeight = FontWeight.SemiBold, // mengatur ketebalan font
                     color = Color.DarkGray, // mengatur warna font
-            )
+            ),
+            modifier = Modifier
+                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
         )
 
         Text(
