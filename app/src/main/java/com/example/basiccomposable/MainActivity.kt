@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,6 +20,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.basiccomposable.ui.theme.BasicComposableTheme
 
@@ -55,9 +57,12 @@ fun BasicCompose(modifier: Modifier = Modifier){
             )
         )
 
-        Image(painter = painterResource(id =R.drawable.umy), // objek painter || R.drawable.(namafile) = resource/drawable
-            contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
-        ) // fungsi untuk menambahkan gambar
+        Image(
+            painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
+            contentDescription = "Logo UMY",  // Deskripsi gambar
+            modifier = Modifier
+                .size(150.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+        )
 
         Text( // memiliki 2 parameter; text dan style
             text = "Nama",
@@ -87,7 +92,9 @@ fun BasicCompose(modifier: Modifier = Modifier){
         )
 
         Image(painter = painterResource(id =R.drawable.krs), // objek painter || R.drawable.(namafile) = resource/drawable
-            contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
+            contentDescription = "", // atau null. untuk memberikan deskripsi teks tentang gambar.
+            modifier = Modifier
+                .size(85.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         ) // fungsi untuk menambahkan gambar
     }
 }
