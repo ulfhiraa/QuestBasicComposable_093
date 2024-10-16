@@ -69,7 +69,8 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 fontSize = 20.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
-                letterSpacing = 1.5.sp,
+                letterSpacing = 1.5.sp, // jarak antar huruf
+                lineHeight = 60.sp, // jarak antar baris
             )
         )
 
