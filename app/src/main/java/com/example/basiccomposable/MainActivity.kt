@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -48,7 +49,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
                 fontSize = 24.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
-                color =,
+                color = Color.Black, // untuk mengatur warna tulisan
             )
         )
     }
