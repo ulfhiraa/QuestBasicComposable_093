@@ -76,6 +76,15 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 color = Color.Black, // mengatur warna font
             )
         )
+
+        Text (
+            text = "20220130093",
+            style = TextStyle(
+                fontSize = 16.sp, // mengatur ukuran font
+                fontWeight = FontWeight.Normal, // mengatur ketebalan font
+                color = Color.Black, // mengatur warna font
+            )
+        )
     }
 }
 
