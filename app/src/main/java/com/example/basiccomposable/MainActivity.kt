@@ -85,6 +85,10 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 color = Color.Black, // mengatur warna font
             )
         )
+
+        Image(painter = painterResource(id =R.drawable.krs), // objek painter || R.drawable.(namafile) = resource/drawable
+            contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
+        ) // fungsi untuk menambahkan gambar
     }
 }
 
