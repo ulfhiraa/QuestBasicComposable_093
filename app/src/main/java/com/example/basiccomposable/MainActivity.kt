@@ -82,7 +82,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
+                .padding(top = 79.dp)  // Menambahkan padding 79 dp di semua sisi
                 .size(250.dp)  // Mengatur ukuran gambar menjadi 250x250 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
 
