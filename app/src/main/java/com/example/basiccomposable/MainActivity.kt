@@ -61,7 +61,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .size(150.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(160.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
 
         Text( // memiliki 2 parameter; text dan style
