@@ -33,8 +33,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) { // Modifier adalah objek yang memungkinkan kamu untuk mengubah atau memodifikasi tampilan dan perilaku komponen UI di Jetpack Compose, seperti mengatur ukuran, padding, margin, warna latar belakang, alignment, dan sebagainya.
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        text = "Hello $name!", // parameter text untuk menampilkan teks "Hello $name"
+        modifier = modifier // agar dapat di modifikasi
     )
 }
 
