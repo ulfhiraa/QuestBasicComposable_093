@@ -54,13 +54,13 @@ fun BasicCompose(modifier: Modifier = Modifier){
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
                 fontSize = 12.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
-                fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
+                fontWeight = FontWeight.Bold, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
                 letterSpacing = 2.sp, // Jarak antar huruf
-                lineHeight = 60.sp // Jarak antar baris
+                lineHeight = 55.sp // Jarak antar baris
             ),
             modifier = Modifier
-                .padding(80.dp) // Menambahkan padding 16 dp di semua sisi
+                .padding(80.dp) // Menambahkan padding 80 dp di semua sisi
         )
 
         Text(
@@ -69,6 +69,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 fontSize = 20.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
+                letterSpacing = 2.sp,
             )
         )
 
