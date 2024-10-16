@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
@@ -48,20 +49,25 @@ fun BasicCompose(modifier: Modifier = Modifier){
         verticalArrangement = Arrangement.Center, //  Menempatkan elemen di tengah secara vertikal
         modifier = Modifier.fillMaxSize() // membuat elemen UI mengisi seluruh ruang yang tersedia dalam kontainer tempat elemen tersebut berada.
         ) {
+
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 24.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontSize = 12.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
-            )
+                letterSpacing = 2.sp, // Jarak antar huruf
+                lineHeight = 60.sp // Jarak antar baris
+            ),
+            modifier = Modifier
+                .padding(80.dp) // Menambahkan padding 16 dp di semua sisi
         )
 
         Text(
             text = "Kelas B", // parameter Text untuk menampilkan Teks "Kelas B"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
                 fontSize = 20.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
-                fontWeight = FontWeight.W200, // untuk Menentukan ketebalan font
+                fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
             )
         )
@@ -70,7 +76,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .size(160.dp)  // Mengatur ukuran gambar menjadi 160x160 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(180.dp)  // Mengatur ukuran gambar menjadi 160x160 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
 
         Text( // memiliki 2 parameter; text dan style
