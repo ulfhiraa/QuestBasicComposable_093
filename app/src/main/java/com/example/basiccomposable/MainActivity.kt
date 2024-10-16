@@ -35,8 +35,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable // anotasi jetpack Compose
 fun BasicCompose(modifier: Modifier = Modifier){
-    Column (horizontalAlignment = Alignment.CenterHorizontally,// agar element berada ditengah secara horizontal
-       verticalArrangement = Arrangement.Center, //  Menempatkan elemen di tengah secara vertikal
+    Column (
+        horizontalAlignment = Alignment.CenterHorizontally,// agar element berada ditengah secara horizontal
+        verticalArrangement = Arrangement.Center, //  Menempatkan elemen di tengah secara vertikal
+        modifier = Modifier.fillMaxSize() // membuat elemen UI mengisi seluruh ruang yang tersedia dalam kontainer tempat elemen tersebut berada.
         ){  }
 }
 
