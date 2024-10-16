@@ -29,9 +29,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             BasicComposableTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding -> // Scaffold : menampilkan body
-                    Greeting(
-                        name = "Ulfah",
-                        modifier = Modifier.padding(innerPadding)
+                    BasicCompose(
+                        modifier = Modifier.padding(innerPadding) // perlu parameter pada main activity. perlu modifier (akan mengubah padding (jarak kiri kanan atas bawah), bentuk, ukuran).
                     )
                 }
             }
@@ -55,7 +54,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             )
         )
 
-        Image(painter = painterResource(id = R.drawable.umy), // objek painter || R.drawable.(namafile) = resource/drawable
+        Image(painter = painterResource(id =R.drawable.umy), // objek painter || R.drawable.(namafile) = resource/drawable
             contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
         ) // fungsi untuk menambahkan gambar
     }
