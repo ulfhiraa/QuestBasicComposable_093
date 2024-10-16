@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
+@Composable // anotasi jetpack Compose
 fun BasicCompose(modifier: Modifier = Modifier){
 
 }
