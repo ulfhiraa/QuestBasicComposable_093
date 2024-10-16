@@ -34,7 +34,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable // anotasi jetpack Compose
 fun BasicCompose(modifier: Modifier = Modifier){
-    Column (horizontalAlignment = Alignment.CenterHorizontally){  }
+    Column (horizontalAlignment = Alignment.CenterHorizontally,// agar element berada ditengah
+        ){  }
 }
 
 @Composable
