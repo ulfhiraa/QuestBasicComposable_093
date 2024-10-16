@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.basiccomposable.ui.theme.BasicComposableTheme
@@ -45,8 +46,8 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 24.sp,
-                fontWeight =,
+                fontSize = 24.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
                 color =,
             )
         )
