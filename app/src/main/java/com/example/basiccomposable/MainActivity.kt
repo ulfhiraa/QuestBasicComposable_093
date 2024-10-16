@@ -94,7 +94,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Image(painter = painterResource(id =R.drawable.krs), // objek painter || R.drawable.(namafile) = resource/drawable
             contentDescription = "", // atau null. untuk memberikan deskripsi teks tentang gambar.
             modifier = Modifier
-                .size(85.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(88.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         ) // fungsi untuk menambahkan gambar
     }
 }
