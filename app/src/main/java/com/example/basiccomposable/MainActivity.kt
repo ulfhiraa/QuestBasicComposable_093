@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.basiccomposable.ui.theme.BasicComposableTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { //  onCreate adalah tempat di mana kamu menginisialisasi komponen-komponen awal dari Activity, seperti layout, data, dan elemen-elemen lainnya yang akan digunakan di UI.
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
