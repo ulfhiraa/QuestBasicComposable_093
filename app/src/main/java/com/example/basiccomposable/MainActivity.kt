@@ -42,6 +42,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) { // Modifier adalah o
 @Composable // anotasi jetpack compose
 fun GreetingPreview() {
     BasicComposableTheme {
-        Greeting("Ulfah")
+        Greeting("Ulfah ")
     }
 }
