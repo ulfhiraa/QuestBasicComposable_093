@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.example.basiccomposable.ui.theme.BasicComposableTheme
 
 class MainActivity : ComponentActivity() {
@@ -44,7 +45,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize =,
+                fontSize = 25.sp,
                 fontWeight =,
                 color =,
             )
