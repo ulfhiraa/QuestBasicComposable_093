@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -52,6 +54,10 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 color = Color.Black, // untuk mengatur warna tulisan
             )
         )
+
+        Image(painter = painterResource(id = R.drawable.umy), // objek painter || R.drawable.(namafile) = resource/drawable
+            contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
+        ) // fungsi untuk menambahkan gambar
     }
 }
 
