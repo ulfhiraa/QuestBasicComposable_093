@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true)
 @Composable // anotasi jetpack Compose
 fun BasicCompose(modifier: Modifier = Modifier){
     Column (
@@ -57,6 +58,15 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Image(painter = painterResource(id =R.drawable.umy), // objek painter || R.drawable.(namafile) = resource/drawable
             contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
         ) // fungsi untuk menambahkan gambar
+
+        Text(
+            text = "Nama",
+            style = TextStyle(
+                    fontSize = 15.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = Color.DarkGray,
+            )
+        )
     }
 }
 
