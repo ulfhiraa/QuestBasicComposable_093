@@ -59,12 +59,21 @@ fun BasicCompose(modifier: Modifier = Modifier){
             contentDescription = "" // atau null. untuk memberikan deskripsi teks tentang gambar.
         ) // fungsi untuk menambahkan gambar
 
-        Text(
+        Text( // memiliki 2 parameter; text dan style
             text = "Nama",
             style = TextStyle(
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = Color.DarkGray,
+                    fontSize = 16.sp, // mengatur ukuran font
+                    fontWeight = FontWeight.SemiBold, // mengatur ketebalan font
+                    color = Color.DarkGray, // mengatur warna font
+            )
+        )
+
+        Text(
+            text = "Muhajirah Ulfah",
+            style = TextStyle(
+                fontSize = 16.sp, // mengatur ukuran font
+                fontWeight = FontWeight.Normal, // mengatur ketebalan font
+                color = Color.Black, // mengatur warna font
             )
         )
     }
