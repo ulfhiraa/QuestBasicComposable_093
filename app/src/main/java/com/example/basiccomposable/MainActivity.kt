@@ -42,8 +42,8 @@ fun BasicCompose(modifier: Modifier = Modifier){
         modifier = Modifier.fillMaxSize() // membuat elemen UI mengisi seluruh ruang yang tersedia dalam kontainer tempat elemen tersebut berada.
         ) {
         Text(
-            text = "Pengembangan Aplikasi Mobile",
-            style = TextStyle(
+            text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
+            style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
                 fontSize =,
                 fontWeight =,
                 color =,
