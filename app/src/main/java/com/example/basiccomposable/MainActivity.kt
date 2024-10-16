@@ -57,11 +57,20 @@ fun BasicCompose(modifier: Modifier = Modifier){
             )
         )
 
+        Text(
+            text = "Kelas B", // parameter Text untuk menampilkan Teks "Kelas B"
+            style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
+                fontSize = 20.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontWeight = FontWeight.W200, // untuk Menentukan ketebalan font
+                color = Color.Black, // untuk mengatur warna tulisan
+            )
+        )
+
         Image(
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .size(160.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(160.dp)  // Mengatur ukuran gambar menjadi 160x160 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
 
         Text( // memiliki 2 parameter; text dan style
@@ -94,7 +103,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Image(painter = painterResource(id =R.drawable.krs), // objek painter || R.drawable.(namafile) = resource/drawable
             contentDescription = "", // atau null. untuk memberikan deskripsi teks tentang gambar.
             modifier = Modifier
-                .size(88.dp)  // Mengatur ukuran gambar menjadi 150x150 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(88.dp)  // Mengatur ukuran gambar menjadi 88x88 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         ) // fungsi untuk menambahkan gambar
     }
 }
