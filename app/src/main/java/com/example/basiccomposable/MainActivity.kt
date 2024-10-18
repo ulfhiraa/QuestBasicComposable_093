@@ -53,28 +53,24 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Pengembangan Aplikasi Mobile", // parameter Text untuk menampilkan Teks "Pengembangan Aplikasi Mobile"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 15.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontSize = 23.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
                 fontWeight = FontWeight.W500, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
-                letterSpacing = 0.5.sp, // Jarak antar huruf
-                lineHeight = 55.sp // Jarak antar baris
-            ),
-            modifier = Modifier
-                .padding(20.dp) // Menambahkan padding 80 dp di semua sisi
+            )
+            //modifier = Modifier
+              //  .padding(10.dp) // Menambahkan padding 10 dp di semua sisi
         )
 
 
         Text(
             text = "Kelas B", // parameter Text untuk menampilkan Teks "Kelas B"
             style = TextStyle( // objek TextStyle dengan atribut FontSize, FontWeight dan Color
-                fontSize = 15.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
-                fontWeight = FontWeight.W300, // untuk Menentukan ketebalan font
+                fontSize = 18.sp, // Digunakan khusus untuk ukuran teks dan disesuaikan berdasarkan pengaturan ukuran teks pengguna.
+                fontWeight = FontWeight.W400, // untuk Menentukan ketebalan font
                 color = Color.Black, // untuk mengatur warna tulisan
                 letterSpacing = 1.5.sp, // jarak antar huruf
                 lineHeight = 60.sp, // jarak antar baris
-            ),
-            modifier = Modifier
-                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
+            )
         )
 
 
@@ -82,7 +78,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.umy),  // Mengambil gambar dari resource
             contentDescription = "Logo UMY",  // Deskripsi gambar
             modifier = Modifier
-                .padding(top = 79.dp)  // Menambahkan padding 79 dp di semua sisi
+                .padding(top = 50.dp)  // Menambahkan padding 50 dp di semua sisi
                 .size(250.dp)  // Mengatur ukuran gambar menjadi 250x250 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         )
 
@@ -93,9 +89,10 @@ fun BasicCompose(modifier: Modifier = Modifier){
                     fontSize = 16.sp, // mengatur ukuran font
                     fontWeight = FontWeight.SemiBold, // mengatur ketebalan font
                     color = Color.DarkGray, // mengatur warna font
+                    lineHeight = 100.sp, // jarak antar baris
             ),
-            modifier = Modifier
-                .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
+          //  modifier = Modifier
+          //      .padding(top = 80.dp)  // Menambahkan padding 80 dp di semua sisi
         )
 
         Text(
@@ -103,23 +100,25 @@ fun BasicCompose(modifier: Modifier = Modifier){
             style = TextStyle(
                 fontSize = 16.sp, // mengatur ukuran font
                 fontWeight = FontWeight.Normal, // mengatur ketebalan font
-                color = Color.Black, // mengatur warna font
+                color = Color.Red, // mengatur warna font
+                lineHeight = 100.sp, // jarak antar baris
+
             )
         )
 
         Text (
-            text = "20220130093",
+            text = "20220140093",
             style = TextStyle(
-                fontSize = 16.sp, // mengatur ukuran font
+                fontSize = 30.sp, // mengatur ukuran font
                 fontWeight = FontWeight.Normal, // mengatur ketebalan font
                 color = Color.Black, // mengatur warna font
             )
         )
 
-        Image(painter = painterResource(id =R.drawable.krs), // objek painter || R.drawable.(namafile) = resource/drawable
+        Image(painter = painterResource(id =R.drawable.ira), // objek painter || R.drawable.(namafile) = resource/drawable
             contentDescription = "", // atau null. untuk memberikan deskripsi teks tentang gambar.
             modifier = Modifier
-                .size(88.dp)  // Mengatur ukuran gambar menjadi 88x88 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
+                .size(250.dp)  // Mengatur ukuran gambar menjadi 88x88 dp : density-independent pixels. Digunakan untuk ukuran elemen UI (seperti margin, padding, dan ukuran tombol) dan tidak terpengaruh oleh pengaturan ukuran teks pengguna.
         ) // fungsi untuk menambahkan gambar
     }
 }
